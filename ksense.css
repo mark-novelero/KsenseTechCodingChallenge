@@ -1,25 +1,32 @@
+body {
+  background-color: rgb(178, 178, 179);
+}
+
 #main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 35px;
+  grid-gap: 45px;
   padding-bottom: 50px;
 }
 
 header {
-  margin-bottom: 50px;
+  padding-top: 10px;
+  border-bottom: 2px double rgb(252, 251, 251);
+  width: 96%;
+  margin: 0px 0px 20px 30px;
 }
 
 h1 {
   text-align: center;
-  font-size: 33pt;
-  color: rgb(51, 64, 247);
-  font-family: "Cabin", sans-serif;
+  font-size: 36pt;
+  color: rgb(245, 255, 221);
+  font-family: "Work Sans", sans-serif;
 }
 
 .letter-k {
   font-size: 40pt;
-  color: rgb(51, 64, 247);
-  border: 1pt solid rgb(51, 64, 247);
+  color: rgb(193, 237, 248);
+  border: 1pt solid rgb(193, 237, 248);
   padding: 5px;
 }
 
@@ -29,7 +36,7 @@ h1 {
   padding: 40px;
   border-radius: 20px;
   border-top: 0.5px solid gray;
-  box-shadow: 1px 17px 16px 2px rgb(180, 175, 175);
+  box-shadow: 1px 17px 16px 2px rgb(131, 129, 129);
   background: rgb(241, 239, 236);
   background: radial-gradient(
     circle,
@@ -41,16 +48,78 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 28px;
-  color: rgb(51, 64, 247);
+  font-size: 23pt;
+  color: rgb(21, 18, 65);
   font-family: "Varela Round", sans-serif;
+  line-height: 1px;
+  letter-spacing: 2.5px;
 }
 
 h3 {
   text-align: center;
-  color: rgb(9, 127, 156);
+  font-size: 11pt;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(18, 19, 17);
+  margin-bottom: 30px;
 }
 
 button {
   margin-left: 42%;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: rgb(252, 252, 207);
+  border: none;
+  box-shadow: 1px 1px rgb(204, 203, 203);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(252, 252, 167);
+}
+
+.div-post {
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s; /* Firefox < 16 */
+  -ms-animation: fadein 5s; /* Internet Explorer */
+  -o-animation: fadein 5s; /* Opera < 12.1 */
+  animation: fadein 5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

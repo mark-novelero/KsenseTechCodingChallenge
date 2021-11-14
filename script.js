@@ -24,7 +24,6 @@ function renderUser(user, posts){
     // Grab posts made by user. 
     let userPosts = posts.filter(post => user.id === post.userId);
 
-
     let userDiv = document.createElement('div');
     userDiv.className = 'user-div';
 
@@ -55,12 +54,14 @@ function renderUser(user, posts){
             divPost.className = 'div-post';
             
             let titlePost = document.createElement('h4');
-            titlePost.className = "user-post";
-            titlePost.innerText= post.title;
+            titlePost.className = 'user-post';
+            titlePost.innerText = post.title.toUpperCase();
+            titlePost.lang = 'latin'
             
             let postBody = document.createElement('p');
             postBody.className = 'post-body';
             postBody.innerText = post.body;
+            postBody.lang = 'latin'
 
             divPost.append(titlePost, postBody);
             userDiv.append(divPost);

@@ -11,23 +11,23 @@ body {
 
 header {
   padding-top: 10px;
-  border-bottom: 2px double rgb(252, 251, 251);
   width: 96%;
   margin: 0px 0px 20px 30px;
+  border-bottom: 2px double rgb(252, 251, 251);
 }
 
 h1 {
   text-align: center;
   font-size: 36pt;
-  color: rgb(245, 255, 221);
   font-family: "Work Sans", sans-serif;
+  color: rgb(245, 255, 221);
 }
 
 .letter-k {
   font-size: 40pt;
+  padding: 5px;
   color: rgb(193, 237, 248);
   border: 1pt solid rgb(193, 237, 248);
-  padding: 5px;
 }
 
 .user-div {
@@ -49,28 +49,28 @@ h1 {
 h2 {
   text-align: center;
   font-size: 23pt;
-  color: rgb(21, 18, 65);
   font-family: "Varela Round", sans-serif;
   line-height: 1px;
   letter-spacing: 2.5px;
+  color: rgb(21, 18, 65);
 }
 
 h3 {
   text-align: center;
   font-size: 11pt;
   font-family: "Varela Round", sans-serif;
-  color: rgb(18, 19, 17);
   margin-bottom: 30px;
+  color: rgb(18, 19, 17);
 }
 
 button {
   margin-left: 42%;
   padding: 7px;
   border-radius: 7px;
-  background-color: rgb(252, 252, 207);
   border: none;
-  box-shadow: 1px 3px 3px rgb(204, 203, 203);
   cursor: pointer;
+  background-color: rgb(252, 252, 207);
+  box-shadow: 1px 3px 3px rgb(204, 203, 203);
 }
 
 button:hover {
@@ -122,4 +122,10 @@ button:hover {
   to {
     opacity: 1;
   }
+}
+
+h4 {
+  line-height: 12pt;
+  color: rgb(3, 16, 29);
+  font-size: 12pt;
 }
